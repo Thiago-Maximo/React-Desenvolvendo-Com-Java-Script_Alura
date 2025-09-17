@@ -1,3 +1,4 @@
+import BotaoEnviar from '../BotaoEnviar_Formulario';
 import CampoTexto from '../CampoTexto';
 import './formulario.css';
 
@@ -9,6 +10,7 @@ const Formulario = () => {
                 <CampoTexto label="Nome" placeholder="Digite Seu Nome" />
                 <CampoTexto label="Cargo" placeholder="Digite Seu Cargo" />
                 <CampoTexto label="Imagem" placeholder="Digite o Endereço da Imagem" />
+                <BotaoEnviar></BotaoEnviar>
             </form>
         </section>
     )
