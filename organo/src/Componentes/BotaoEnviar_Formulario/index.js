@@ -1,8 +1,8 @@
 import './botao.css'
 
-const BotaoEnviar = () =>{
+const BotaoEnviar = (props) =>{
     return(
-        <button type='submit' className='botao'>Criar Card</button>
+        <button className='botao'>{props.texto}</button>
     )
 }
 
