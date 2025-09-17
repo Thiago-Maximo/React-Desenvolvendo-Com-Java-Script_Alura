@@ -1,8 +1,19 @@
 import BotaoEnviar from '../BotaoEnviar_Formulario';
 import CampoTexto from '../CampoTexto';
+import ListaSuspensa from '../ListaSuspensa';
 import './formulario.css';
 
 const Formulario = () => {
+
+    const times = [
+        'Programação',
+        'Front-End',
+        'Data-Science',
+        'DevOps',
+        'Mobile',
+        'UX e Desgin'
+    ]
+
     return (
         <section className='formulario'>
             <form>
@@ -10,6 +21,7 @@ const Formulario = () => {
                 <CampoTexto label="Nome" placeholder="Digite Seu Nome" />
                 <CampoTexto label="Cargo" placeholder="Digite Seu Cargo" />
                 <CampoTexto label="Imagem" placeholder="Digite o Endereço da Imagem" />
+                <ListaSuspensa label='Time' itens={times}></ListaSuspensa>
                 <BotaoEnviar></BotaoEnviar>
             </form>
         </section>

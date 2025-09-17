@@ -19,3 +19,7 @@
 .formulario label{
     margin: 0 5px;
 }
+
+.formulario button{
+    top: 100px;
+}
