@@ -11,7 +11,6 @@ const Formulario = (props) => {
         'Programação',
         'Front-End',
         'Data-Science',
-        'DevOps',
         'Mobile',
         'UX e Desgin'
     ]

@@ -13,6 +13,34 @@ function App() {
     setColaboradores([colaboradores, colaborador])
   }
 
+  const times = [
+    {
+      nome: 'Programação',
+      corPrimaria: ' #57c278',
+      corSecundaria: '#d9f7e9'
+    },
+    {
+      nome: 'Front-End',
+      corPrimaria: ' #82cffa',
+      corSecundaria: '#e8f8ff'
+    },
+    {
+      nome: 'Data-Science',
+      corPrimaria: ' #a6d157',
+      corSecundaria: '#f0f8e2'
+    },
+    {
+      nome: 'Mobile',
+      corPrimaria: ' #ffb405',
+      corSecundaria: '#fff5d9'
+    },
+    {
+      nome: 'UX e Desgin',
+      corPrimaria: ' #db6ebf',
+      corSecundaria: '#fae9f5'
+    }
+  ]
+
   return (
     <div>
       <header>
@@ -24,7 +52,8 @@ function App() {
       </section>
 
       <section>
-        <Time nome="Programação"></Time>
+
+        {times.map(time => <Time key={time.nome} nome={time.nome} corPrimaria={time.corPrimaria} corSecundaria={time.corSecundaria}></Time>)}
       </section>
     </div>
   );
