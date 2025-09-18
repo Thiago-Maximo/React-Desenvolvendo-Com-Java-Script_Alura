@@ -14,9 +14,6 @@ function App() {
   }
 
   const times = [
-     {
-      nome: '',
-    },
     {
       nome: 'Programação',
       corPrimaria: ' #57c278',
