@@ -14,6 +14,9 @@ function App() {
   }
 
   const times = [
+     {
+      nome: '',
+    },
     {
       nome: 'Programação',
       corPrimaria: ' #57c278',
@@ -48,7 +51,7 @@ function App() {
       </header>
 
       <section>
-        <Formulario aoColaboradorCadastrado={colaborador => aoNovoColocaboradorAdicionado(colaborador)}></Formulario>
+        <Formulario times={times.map(time => time.nome)} aoColaboradorCadastrado={colaborador => aoNovoColocaboradorAdicionado(colaborador)}></Formulario>
       </section>
 
       <section>

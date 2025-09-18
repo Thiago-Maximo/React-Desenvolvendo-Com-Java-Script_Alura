@@ -6,14 +6,7 @@ import './formulario.css';
 
 const Formulario = (props) => {
 
-    const times = [
-        '',
-        'Programação',
-        'Front-End',
-        'Data-Science',
-        'Mobile',
-        'UX e Desgin'
-    ]
+   
 
     const aoSalvar = (evento) => {
         evento.preventDefault();
@@ -58,7 +51,7 @@ const Formulario = (props) => {
                 <ListaSuspensa
                     required={true}
                     label='Time'
-                    itens={times}
+                    itens={props.times}
                     valor={time}
                     aoAlterado={valor => setTime(valor)}
                 ></ListaSuspensa>
